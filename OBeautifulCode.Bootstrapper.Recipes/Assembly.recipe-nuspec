@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>OBeautifulCode.Bootstrapper.Recipes.Assembly</id>
+    <description>Bootstraps an OBC assembly project.</description>
+    <tags>bootstrap bootstrapper visualstudio vs project csproj assembly</tags>
+    <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
+    <dependencies>
+      <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="1.0.4" />
+    </dependencies>
+  </metadata>
+</package>

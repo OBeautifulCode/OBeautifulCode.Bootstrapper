@@ -45,6 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
+    <None Include="Assembly.recipe-nuspec" />
+    <None Include="Recipe.recipe-nuspec" />
     <None Include="Test.recipe-nuspec" />
     <None Include="packages.config" />
     <None Include="Core.recipe-nuspec" />
