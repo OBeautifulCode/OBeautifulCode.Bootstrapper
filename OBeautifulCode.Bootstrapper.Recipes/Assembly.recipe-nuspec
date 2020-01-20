@@ -6,7 +6,7 @@
     <tags>bootstrap bootstrapper visualstudio vs project csproj assembly</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
-      <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="1.0.8" />
+      <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="1.0.9" />
     </dependencies>
   </metadata>
 </package>
