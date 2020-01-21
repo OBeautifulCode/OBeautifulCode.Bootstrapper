@@ -7,6 +7,11 @@
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="1.0.9" />
+      <dependency id="CLAP" version="4.6.0" />
     </dependencies>
+    <files>
+      <file src="Console\ConsoleAbstractionBase.cs.pp" target="content\net45\.recipes\OBeautifulCode.Bootstrapper\ConsoleAbstractionBase.cs.pp" />
+      <file src="Console\Program.cs.pp" target="content\net45\.recipes\OBeautifulCode.Bootstrapper\Program.cs.pp" />
+    </files>
   </metadata>
 </package>
