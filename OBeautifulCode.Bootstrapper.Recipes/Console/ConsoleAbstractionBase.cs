@@ -78,8 +78,7 @@ namespace OBeautifulCode.Bootstrapper.Recipes
         /// </summary>
         /// <param name="helpText">Generated help text to display.</param>
         [Empty]
-        [Help(Aliases = "h,?,-h,-help")]
-        [Verb(Aliases = "Help", IsDefault = true)]
+        [Help(Aliases = "help,h,?")]
         public static void ShowUsage(
             string helpText)
         {
@@ -90,9 +89,6 @@ namespace OBeautifulCode.Bootstrapper.Recipes
 
             Console.WriteLine("   Usage");
             Console.Write("   -----");
-
-            // strip out the usage info about help, it's confusing
-            helpText = string.Join(Environment.NewLine, helpText.Split(new[] { Environment.NewLine }, StringSplitOptions.None).Skip(3));
 
             Console.WriteLine(helpText);
             Console.WriteLine();
