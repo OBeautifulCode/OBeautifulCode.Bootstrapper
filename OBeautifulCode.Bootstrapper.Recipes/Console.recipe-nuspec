@@ -12,6 +12,6 @@
   </metadata>
   <files>
     <file src="Console\ConsoleAbstractionBase.cs.pp" target="content\net462\.recipes\OBeautifulCode.Bootstrapper\ConsoleAbstractionBase.cs.pp" />
-    <file src="Console\Program.cs.pp" target="content\net462\.recipes\OBeautifulCode.Bootstrapper\Program.cs.pp" />
+    <file src="Console\Program.cs.pp" target="Program.cs.pp" />
   </files>
 </package>

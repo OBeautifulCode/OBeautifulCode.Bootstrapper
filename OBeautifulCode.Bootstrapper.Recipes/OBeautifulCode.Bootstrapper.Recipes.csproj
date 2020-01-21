@@ -39,12 +39,15 @@
     <CodeAnalysisRuleSet />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CLAP, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CLAP.4.6\lib\net35\CLAP.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include=".analyzers\SuppressBecause.cs" />
-    <None Include="Console\ConsoleAbstractionBase.cs.pp" />
+    <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <None Include="Console\Program.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
