@@ -1,6 +1,11 @@
-﻿regex:^Naos
+﻿# other projects
+regex:^Naos
 regex:^CoMetrics
+
+# external dependencies
 Its.Configuration
+
+# unlisted nuget packages
 OBeautifulCode.AccountingTime.BsonSerialization
 OBeautifulCode.AccountingTime.JsonSerialization
 OBeautifulCode.AccountingTime.Test.DummyFactory

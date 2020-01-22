@@ -1,1 +1,4 @@
-﻿
+﻿# other bootstrappers
+OBeautifulCode.Bootstrapper.Recipes.Assembly
+OBeautifulCode.Bootstrapper.Recipes.Console
+OBeautifulCode.Bootstrapper.Recipes.Test
