@@ -9,4 +9,7 @@
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="1.0.9" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="Recipes\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
+  </files>
 </package>

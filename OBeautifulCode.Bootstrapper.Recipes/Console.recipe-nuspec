@@ -11,6 +11,7 @@
     </dependencies>
   </metadata>
   <files>
+    <file src="Console\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
     <file src="Console\ConsoleAbstractionBase.cs" target="content\net462\.recipes\OBeautifulCode.Bootstrapper\ConsoleAbstractionBase.cs" />
     <file src="Console\Program.cs.pp" target="content\net462\.recipes\OBeautifulCode.Bootstrapper\Program.cs.pp" />
   </files>

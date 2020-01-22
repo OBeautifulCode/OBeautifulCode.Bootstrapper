@@ -68,6 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".analyzers\dictionary.xml" />
+    <Content Include="Assembly\NugetPackageBlacklist.txt" />
+    <Content Include="Console\NugetPackageBlacklist.txt" />
+    <Content Include="Core\NugetPackageBlacklist.txt" />
+    <Content Include="Recipe\NugetPackageBlacklist.txt" />
+    <Content Include="Test\NugetPackageBlacklist.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
