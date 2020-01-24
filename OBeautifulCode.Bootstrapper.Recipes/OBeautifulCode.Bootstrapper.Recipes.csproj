@@ -48,14 +48,16 @@
   <ItemGroup>
     <Compile Include=".analyzers\SuppressBecause.cs" />
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
+    <None Include="AssemblyTest.recipe-nuspec" />
+    <None Include="ConsoleTest.recipe-nuspec" />
     <None Include="Console\Program.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
     <None Include="Console.recipe-nuspec" />
     <None Include="Assembly.recipe-nuspec" />
+    <None Include="RecipeTest.recipe-nuspec" />
     <None Include="Recipe.recipe-nuspec" />
-    <None Include="Test.recipe-nuspec" />
     <None Include="packages.config" />
     <None Include="Core.recipe-nuspec" />
   </ItemGroup>
@@ -68,11 +70,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".analyzers\dictionary.xml" />
+    <Content Include="RecipeTest\NugetPackageBlacklist.txt" />
+    <Content Include="ConsoleTest\NugetPackageBlacklist.txt" />
     <Content Include="Assembly\NugetPackageBlacklist.txt" />
     <Content Include="Console\NugetPackageBlacklist.txt" />
     <Content Include="Core\NugetPackageBlacklist.txt" />
     <Content Include="Recipe\NugetPackageBlacklist.txt" />
-    <Content Include="Test\NugetPackageBlacklist.txt" />
+    <Content Include="AssemblyTest\NugetPackageBlacklist.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
