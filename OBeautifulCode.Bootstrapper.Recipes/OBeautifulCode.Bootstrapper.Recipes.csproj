@@ -50,6 +50,8 @@
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
+    <None Include="CodeGen.ModelObject.Test.recipe-nuspec" />
+    <None Include="CodeGen.ModelObject.recipe-nuspec" />
     <None Include="AssemblyTest.recipe-nuspec" />
     <None Include="ConsoleTest.recipe-nuspec" />
     <None Include="Console\Program.cs.pp" />
@@ -70,6 +72,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".analyzers\dictionary.xml" />
+    <Content Include="CodeGenModelObjectTest\NugetPackageBlacklist.txt" />
+    <Content Include="CodeGenModelObject\NugetPackageBlacklist.txt" />
     <Content Include="RecipeTest\NugetPackageBlacklist.txt" />
     <Content Include="ConsoleTest\NugetPackageBlacklist.txt" />
     <Content Include="Assembly\NugetPackageBlacklist.txt" />
