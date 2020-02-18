@@ -145,6 +145,8 @@
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
+    <None Include="Serialization.Json.recipe-nuspec" />
+    <None Include="Serialization.Bson.recipe-nuspec" />
     <None Include="CodeGen.ModelObject.Test.recipe-nuspec" />
     <None Include="CodeGen.ModelObject.recipe-nuspec" />
     <None Include="AssemblyTest.recipe-nuspec" />
@@ -178,6 +180,8 @@
     <Content Include="Core\NugetPackageBlacklist.txt" />
     <Content Include="Recipe\NugetPackageBlacklist.txt" />
     <Content Include="AssemblyTest\NugetPackageBlacklist.txt" />
+    <Content Include="SerializationBson\NugetPackageBlacklist.txt" />
+    <Content Include="SerializationJson\NugetPackageBlacklist.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

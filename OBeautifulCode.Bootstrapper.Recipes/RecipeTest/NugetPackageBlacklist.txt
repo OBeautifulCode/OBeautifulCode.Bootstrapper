@@ -4,3 +4,5 @@ OBeautifulCode.Bootstrapper.Recipes.Assembly.Test
 OBeautifulCode.Bootstrapper.Recipes.Console
 OBeautifulCode.Bootstrapper.Recipes.Console.Test
 OBeautifulCode.Bootstrapper.Recipes.Recipe
+OBeautifulCode.Bootstrapper.Recipes.Serialization.Bson
+OBeautifulCode.Bootstrapper.Recipes.Serialization.Json
