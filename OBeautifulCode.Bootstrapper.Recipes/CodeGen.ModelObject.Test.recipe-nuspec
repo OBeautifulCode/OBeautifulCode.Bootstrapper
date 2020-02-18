@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="CodeGenModelObject\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
+    <file src="CodeGenModelObjectTest\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
   </files>
 </package>
