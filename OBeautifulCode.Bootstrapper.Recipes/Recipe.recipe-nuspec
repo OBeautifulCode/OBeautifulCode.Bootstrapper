@@ -1,5 +1,5 @@
-﻿<?xml version="1.0"?>
-<package >
+<?xml version="1.0"?>
+<package>
   <metadata>
     <id>OBeautifulCode.Bootstrapper.Recipes.Recipe</id>
     <description>Bootstraps an OBC recipe project.</description>

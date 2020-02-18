@@ -1,5 +1,5 @@
-﻿<?xml version="1.0"?>
-<package >
+<?xml version="1.0"?>
+<package>
   <metadata>
     <id>OBeautifulCode.Bootstrapper.Recipes.Console</id>
     <description>Bootstraps an OBC console EXE project.</description>
@@ -7,7 +7,7 @@
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="$version$" />
-      <dependency id="CLAP" version="4.6.0" />
+      <dependency id="CLAP" version="4.6" />
     </dependencies>
   </metadata>
   <files>
