@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>OBeautifulCode.Bootstrapper.Recipes.Recipe</id>
-    <description>Bootstraps an OBC recipe project.</description>
+    <description>Bootstraps an OBC Recipe project.</description>
     <tags>bootstrap bootstrapper visualstudio vs project csproj recipe</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>

@@ -2,7 +2,7 @@
 OBeautifulCode.Bootstrapper.Recipes.Assembly
 OBeautifulCode.Bootstrapper.Recipes.Assembly.Test
 OBeautifulCode.Bootstrapper.Recipes.Console
-OBeautifulCode.Bootstrapper.Recipes.Domain
+OBeautifulCode.Bootstrapper.Recipes.Console.Test
 OBeautifulCode.Bootstrapper.Recipes.Domain.Test
 OBeautifulCode.Bootstrapper.Recipes.Recipe
 OBeautifulCode.Bootstrapper.Recipes.Recipe.Test

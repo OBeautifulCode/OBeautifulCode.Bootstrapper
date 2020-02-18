@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>OBeautifulCode.Bootstrapper.Recipes.Recipe.Test</id>
-    <description>Bootstraps an OBC recipe project.</description>
-    <tags>bootstrap bootstrapper visualstudio vs project csproj recipe test</tags>
+    <id>OBeautifulCode.Bootstrapper.Recipes.Assembly.Test</id>
+    <description>Bootstraps an OBC Assembly Test project.</description>
+    <tags>bootstrap bootstrapper visualstudio vs project csproj assembly test</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="$version$" />
@@ -13,6 +13,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="RecipeTest\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
+    <file src="AssemblyTest\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
   </files>
 </package>

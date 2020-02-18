@@ -145,18 +145,20 @@
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
+    <None Include="Domain.recipe-nuspec" />
+    <None Include="Domain.Test.recipe-nuspec" />
     <None Include="Serialization.Json.recipe-nuspec" />
     <None Include="Serialization.Bson.recipe-nuspec" />
     <None Include="CodeGen.ModelObject.Test.recipe-nuspec" />
     <None Include="CodeGen.ModelObject.recipe-nuspec" />
-    <None Include="AssemblyTest.recipe-nuspec" />
-    <None Include="ConsoleTest.recipe-nuspec" />
+    <None Include="Assembly.Test.recipe-nuspec" />
+    <None Include="Console.Test.recipe-nuspec" />
     <None Include="Console\Program.cs.pp" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Console.recipe-nuspec" />
     <None Include="Assembly.recipe-nuspec" />
-    <None Include="RecipeTest.recipe-nuspec" />
+    <None Include="Recipe.Test.recipe-nuspec" />
     <None Include="Recipe.recipe-nuspec" />
     <None Include="packages.config" />
     <None Include="Core.recipe-nuspec" />
@@ -171,6 +173,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".analyzers\dictionary.xml" />
+    <Content Include="DomainTest\NugetPackageBlacklist.txt" />
+    <Content Include="Domain\NugetPackageBlacklist.txt" />
     <Content Include="CodeGenModelObjectTest\NugetPackageBlacklist.txt" />
     <Content Include="CodeGenModelObject\NugetPackageBlacklist.txt" />
     <Content Include="RecipeTest\NugetPackageBlacklist.txt" />
