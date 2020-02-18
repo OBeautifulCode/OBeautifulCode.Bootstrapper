@@ -150,6 +150,7 @@
     <None Include="AssemblyTest.recipe-nuspec" />
     <None Include="ConsoleTest.recipe-nuspec" />
     <None Include="Console\Program.cs.pp" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Console.recipe-nuspec" />
     <None Include="Assembly.recipe-nuspec" />
