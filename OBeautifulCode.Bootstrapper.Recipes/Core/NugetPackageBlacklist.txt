@@ -10,6 +10,8 @@ OBeautifulCode.AccountingTime.BsonSerialization
 OBeautifulCode.AccountingTime.JsonSerialization
 OBeautifulCode.AccountingTime.Test.DummyFactory
 OBeautifulCode.AutoFakeItEasy.Test
+OBeautifulCode.Bootstrapper.Recipes.CodeGen.ModelObject
+OBeautifulCode.Bootstrapper.Recipes.CodeGen.ModelObject.Test
 OBeautifulCode.Bootstrapper.Recipes.Test
 OBeautifulCode.CodeGen
 OBeautifulCode.Collection

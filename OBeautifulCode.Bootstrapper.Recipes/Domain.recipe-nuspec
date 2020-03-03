@@ -7,7 +7,7 @@
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="$version$" />
-      <dependency id="OBeautifulCode.Bootstrapper.Recipes.CodeGen.ModelObject" version="$version$" />
+      <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core.CodeGen.ModelObject" version="$version$" />
     </dependencies>
   </metadata>
   <files>

@@ -145,6 +145,7 @@
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
+    <None Include="Test.recipe-nuspec" />
     <None Include="Domain.recipe-nuspec" />
     <None Include="Domain.Test.recipe-nuspec" />
     <None Include="Serialization.Json.recipe-nuspec" />
@@ -173,10 +174,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".analyzers\dictionary.xml" />
+    <Content Include="Core\CodeGenModelObject\NugetPackageBlacklist.txt" />
+    <Content Include="Core\Test\NugetPackageBlacklist.txt" />
     <Content Include="DomainTest\NugetPackageBlacklist.txt" />
     <Content Include="Domain\NugetPackageBlacklist.txt" />
-    <Content Include="CodeGenModelObjectTest\NugetPackageBlacklist.txt" />
-    <Content Include="CodeGenModelObject\NugetPackageBlacklist.txt" />
+    <Content Include="Core\CodeGenModelObjectTest\NugetPackageBlacklist.txt" />
     <Content Include="RecipeTest\NugetPackageBlacklist.txt" />
     <Content Include="ConsoleTest\NugetPackageBlacklist.txt" />
     <Content Include="Assembly\NugetPackageBlacklist.txt" />

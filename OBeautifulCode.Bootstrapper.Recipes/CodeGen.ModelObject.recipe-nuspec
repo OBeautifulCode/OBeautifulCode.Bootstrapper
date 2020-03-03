@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>OBeautifulCode.Bootstrapper.Recipes.CodeGen.ModelObject</id>
+    <id>OBeautifulCode.Bootstrapper.Recipes.Core.CodeGen.ModelObject</id>
     <description>Bootstraps a project that will use OBeautifulCode.CodeGen.ModelObject to generate code into a domain/non-test project.</description>
     <tags>bootstrap bootstrapper visualstudio vs project csproj codegen model modelobject</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
@@ -12,6 +12,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="CodeGenModelObject\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
+    <file src="Core\CodeGenModelObject\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
   </files>
 </package>
