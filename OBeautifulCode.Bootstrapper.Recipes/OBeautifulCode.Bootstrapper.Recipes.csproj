@@ -145,13 +145,13 @@
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
-    <None Include="Test.recipe-nuspec" />
+    <None Include="Core.Test.recipe-nuspec" />
     <None Include="Domain.recipe-nuspec" />
     <None Include="Domain.Test.recipe-nuspec" />
     <None Include="Serialization.Json.recipe-nuspec" />
     <None Include="Serialization.Bson.recipe-nuspec" />
-    <None Include="CodeGen.ModelObject.Test.recipe-nuspec" />
-    <None Include="CodeGen.ModelObject.recipe-nuspec" />
+    <None Include="Core.CodeGen.ModelObject.Test.recipe-nuspec" />
+    <None Include="Core.CodeGen.ModelObject.recipe-nuspec" />
     <None Include="Assembly.Test.recipe-nuspec" />
     <None Include="Console.Test.recipe-nuspec" />
     <None Include="Console\Program.cs.pp" />
