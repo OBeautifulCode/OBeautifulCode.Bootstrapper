@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>OBeautifulCode.Bootstrapper.Recipes.CodeGen.Core.ModelObject.Test</id>
+    <id>OBeautifulCode.Bootstrapper.Recipes.Core.CodeGen.ModelObject.Test</id>
     <description>Bootstraps a project that will use OBeautifulCode.CodeGen.ModelObject to generate code into a test project.</description>
     <tags>bootstrap bootstrapper visualstudio vs project csproj codegen model modelobject test</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
