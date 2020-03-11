@@ -1,6 +1,7 @@
 ﻿# other projects
 regex:^Naos
 regex:^CoMetrics
+regex:^Spritely
 
 # external dependencies
 Its.Configuration
