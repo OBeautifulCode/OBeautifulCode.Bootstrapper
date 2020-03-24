@@ -4,6 +4,7 @@ OBeautifulCode.Bootstrapper.Recipes.Assembly.Test
 OBeautifulCode.Bootstrapper.Recipes.Console
 OBeautifulCode.Bootstrapper.Recipes.Domain
 OBeautifulCode.Bootstrapper.Recipes.Domain.Test
+OBeautifulCode.Bootstrapper.Recipes.Framework
 OBeautifulCode.Bootstrapper.Recipes.Recipe
 OBeautifulCode.Bootstrapper.Recipes.Recipe.Test
 OBeautifulCode.Bootstrapper.Recipes.Serialization.Bson

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>OBeautifulCode.Bootstrapper.Recipes.Framework</id>
+    <description>Bootstraps an OBC Framework project.</description>
+    <tags>bootstrap bootstrapper visualstudio vs project csproj framework</tags>
+    <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
+    <dependencies>
+      <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="$version$" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Framework\NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
+  </files>
+</package>
