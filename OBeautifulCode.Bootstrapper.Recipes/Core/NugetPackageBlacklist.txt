@@ -54,6 +54,7 @@ OBeautifulCode.Reflection.AssemblyHelper
 OBeautifulCode.Reflection.Recipes.TypeHelper
 OBeautifulCode.Reflection.ReflectionHelper
 OBeautifulCode.Reflection.Test
+OBeautifulCode.Representation.Recipes.DummyFactory
 OBeautifulCode.Representation.Recipes.TypeExtensions
 OBeautifulCode.Representation.System.Recipes.TypeExtensions
 OBeautifulCode.Security
