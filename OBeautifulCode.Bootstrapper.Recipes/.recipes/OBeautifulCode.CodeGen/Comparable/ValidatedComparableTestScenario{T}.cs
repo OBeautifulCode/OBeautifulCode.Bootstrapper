@@ -47,12 +47,12 @@ namespace OBeautifulCode.CodeGen.ModelObject.Recipes
             IReadOnlyList<object> objectsThatAreNotOfTheSameTypeAsReferenceObject)
         {
             new { id }.AsTest().Must().NotBeNullNorWhiteSpace();
-            new { referenceObject }.AsTest().Must().NotBeNull();
-            new { objectsThatAreEqualToButNotTheSameAsReferenceObject }.AsTest().Must().NotBeNull().And().NotContainAnyNullElements();
-            new { objectsThatAreLessThanReferenceObject }.AsTest().Must().NotBeNull().And().NotContainAnyNullElements();
-            new { objectsThatAreGreaterThanReferenceObject }.AsTest().Must().NotBeNull().And().NotContainAnyNullElements();
-            new { objectsThatDeriveFromScenarioTypeButAreNotOfTheSameTypeAsReferenceObject }.AsTest().Must().NotBeNull().And().NotContainAnyNullElements();
-            new { objectsThatAreNotOfTheSameTypeAsReferenceObject }.AsTest().Must().NotBeNull().And().NotContainAnyNullElements();
+            new { referenceObject }.AsTest().Must().NotBeNull(id);
+            new { objectsThatAreEqualToButNotTheSameAsReferenceObject }.AsTest().Must().NotBeNull(id).And().NotContainAnyNullElements(id);
+            new { objectsThatAreLessThanReferenceObject }.AsTest().Must().NotBeNull(id).And().NotContainAnyNullElements(id);
+            new { objectsThatAreGreaterThanReferenceObject }.AsTest().Must().NotBeNull(id).And().NotContainAnyNullElements(id);
+            new { objectsThatDeriveFromScenarioTypeButAreNotOfTheSameTypeAsReferenceObject }.AsTest().Must().NotBeNull(id).And().NotContainAnyNullElements(id);
+            new { objectsThatAreNotOfTheSameTypeAsReferenceObject }.AsTest().Must().NotBeNull(id).And().NotContainAnyNullElements(id);
 
             this.Id = id;
             this.ReferenceObject = referenceObject;
@@ -97,5 +97,13 @@ namespace OBeautifulCode.CodeGen.ModelObject.Recipes
         /// Gets objects that are not the same type as the <see cref="ReferenceObject"/>.
         /// </summary>
         public IReadOnlyList<object> ObjectsThatAreNotOfTheSameTypeAsReferenceObject { get; }
+
+        /// <inheritdoc />
+        public override string ToString()
+        {
+            var result = this.Id;
+
+            return result;
+        }
     }
 }
