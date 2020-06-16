@@ -188,6 +188,7 @@
     <None Include="Core.Test.recipe-nuspec" />
     <None Include="Domain.recipe-nuspec" />
     <None Include="Domain.Test.recipe-nuspec" />
+    <None Include="Serialization.PropertyBag.recipe-nuspec" />
     <None Include="Serialization.Json.recipe-nuspec" />
     <None Include="Serialization.Bson.recipe-nuspec" />
     <None Include="Core.CodeGen.ModelObject.Test.recipe-nuspec" />
@@ -227,6 +228,7 @@
     <Content Include="Core\NugetPackageBlacklist.txt" />
     <Content Include="Recipe\NugetPackageBlacklist.txt" />
     <Content Include="AssemblyTest\NugetPackageBlacklist.txt" />
+    <Content Include="SerializationPropertyBag\NugetPackageBlacklist.txt" />
     <Content Include="SerializationBson\NugetPackageBlacklist.txt" />
     <Content Include="SerializationJson\NugetPackageBlacklist.txt" />
   </ItemGroup>
