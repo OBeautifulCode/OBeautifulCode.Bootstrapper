@@ -6,8 +6,8 @@
     <tags>bootstrap bootstrapper visualstudio vs project csproj</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
-      <dependency id="OBeautifulCode.Build.Analyzers" version="1.1.119" />
-      <dependency id="OBeautifulCode.Build.Conventions.ReSharper" version="1.1.119" />
+      <dependency id="OBeautifulCode.Build.Analyzers" version="1.1.120" />
+      <dependency id="OBeautifulCode.Build.Conventions.ReSharper" version="1.1.120" />
     </dependencies>
   </metadata>
   <files>

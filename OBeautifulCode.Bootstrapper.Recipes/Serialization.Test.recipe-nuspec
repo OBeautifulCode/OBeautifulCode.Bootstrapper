@@ -8,9 +8,9 @@
     <dependencies>
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="$version$" />
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core.Test" version="$version$" />
-      <dependency id="OBeautifulCode.Serialization.Bson" version="1.0.43" />
-      <dependency id="OBeautifulCode.Serialization.Json" version="1.0.43" />
-      <dependency id="OBeautifulCode.Serialization.PropertyBag" version="1.0.43" />
+      <dependency id="OBeautifulCode.Serialization.Bson" version="1.0.45" />
+      <dependency id="OBeautifulCode.Serialization.Json" version="1.0.45" />
+      <dependency id="OBeautifulCode.Serialization.PropertyBag" version="1.0.45" />
     </dependencies>
   </metadata>
   <files>
