@@ -10,3 +10,4 @@ OBeautifulCode.Bootstrapper.Recipes.Recipe.Test
 OBeautifulCode.Bootstrapper.Recipes.Serialization.Bson
 OBeautifulCode.Bootstrapper.Recipes.Serialization.Json
 OBeautifulCode.Bootstrapper.Recipes.Serialization.PropertyBag
+OBeautifulCode.Bootstrapper.Recipes.Serialization.Test

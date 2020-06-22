@@ -184,6 +184,7 @@
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
     <None Include=".analyzers\release.ruleset" />
+    <None Include="Serialization.Test.recipe-nuspec" />
     <None Include="Framework.recipe-nuspec" />
     <None Include="Core.Test.recipe-nuspec" />
     <None Include="Domain.recipe-nuspec" />
@@ -215,6 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".analyzers\dictionary.xml" />
+    <Content Include="SerializationTest\NugetPackageBlacklist.txt" />
     <Content Include="Framework\NugetPackageBlacklist.txt" />
     <Content Include="Core\CodeGenModelObject\NugetPackageBlacklist.txt" />
     <Content Include="Core\Test\NugetPackageBlacklist.txt" />
