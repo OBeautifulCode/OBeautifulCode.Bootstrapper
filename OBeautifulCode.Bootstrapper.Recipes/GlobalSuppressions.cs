@@ -15,6 +15,6 @@
 // You do not need to add suppressions to this file manually.
 using System.Diagnostics.CodeAnalysis;
 
-using OBeautifulCode.Bootstrapper.Recipes.Internal;
+using OBeautifulCode.CodeAnalysis.Recipes;
 
 [assembly: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "OBeautifulCode.Bootstrapper.Recipes", Justification = ObcSuppressBecause.CA1020_AvoidNamespacesWithFewTypes_OptimizeForLogicalGroupingOfTypes)]

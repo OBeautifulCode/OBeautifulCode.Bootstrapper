@@ -8,6 +8,7 @@
     <dependencies>
       <dependency id="OBeautifulCode.Build.Analyzers" version="1.1.120" />
       <dependency id="OBeautifulCode.Build.Conventions.ReSharper" version="1.1.120" />
+      <dependency id="OBeautifulCode.CodeAnalysis.Recipes.SuppressBecause" version="1.0.6" />
     </dependencies>
   </metadata>
   <files>
