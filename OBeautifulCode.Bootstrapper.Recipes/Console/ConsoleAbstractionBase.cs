@@ -20,7 +20,7 @@ namespace OBeautifulCode.Bootstrapper.Recipes
     /// <summary>
     /// Instance for use in CLAP.
     /// </summary>
-#if !OBeautifulCodeBootstrapperRecipesProject
+#if !OBeautifulCodeBootstrapperSolution
     [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
     [System.CodeDom.Compiler.GeneratedCode("OBeautifulCode.Bootstrapper.Recipes", "See package version number")]
     internal
