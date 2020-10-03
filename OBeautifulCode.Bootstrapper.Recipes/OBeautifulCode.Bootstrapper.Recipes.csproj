@@ -177,6 +177,7 @@
     <Compile Include=".recipes\OBeautifulCode.Type\TypeExtensions.cs" />
     <Compile Include="Console\ConsoleAbstractionBase.cs" />
     <AdditionalFiles Include=".analyzers\stylecop.json" />
+    <Compile Include="Properties\ProjectInfo.cs" />
     <None Include=".analyzers\release.ruleset" />
     <None Include="Serialization.Test.recipe-nuspec" />
     <None Include="Framework.recipe-nuspec" />
