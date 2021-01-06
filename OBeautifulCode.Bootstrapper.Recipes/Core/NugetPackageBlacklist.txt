@@ -1,12 +1,13 @@
-﻿# other projects
+﻿# --- external projects ---
 regex:^Naos
 regex:^CoMetrics
 regex:^Spritely
+regex:^Newtonsoft
 
-# external dependencies
+# --- external packages ---
 Its.Configuration
 
-# unlisted nuget packages
+# --- OBC ---
 OBeautifulCode.AccountingTime.BsonSerialization
 OBeautifulCode.AccountingTime.JsonSerialization
 OBeautifulCode.AccountingTime.Test.DummyFactory
