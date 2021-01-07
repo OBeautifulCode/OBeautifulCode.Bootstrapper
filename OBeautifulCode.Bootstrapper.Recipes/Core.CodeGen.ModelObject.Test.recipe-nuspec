@@ -9,7 +9,6 @@
       <dependency id="OBeautifulCode.Assertion.Recipes.Must" version="1.0.24" />
       <dependency id="OBeautifulCode.AutoFakeItEasy" version="1.0.130" />
       <dependency id="OBeautifulCode.CodeGen.ModelObject.Recipes.TestScenarios" version="1.0.139" />
-      <dependency id="OBeautifulCode.DateTime.Recipes.DateTimeExtensions" version="1.0.4" />
       <dependency id="OBeautifulCode.Equality.Recipes.EqualityHelpers" version="1.0.22" />
       <dependency id="OBeautifulCode.Math.Recipes.ThreadSafeRandom" version="1.0.76" />
       <dependency id="OBeautifulCode.Reflection.Recipes.ReflectionHelper" version="1.0.107" />
