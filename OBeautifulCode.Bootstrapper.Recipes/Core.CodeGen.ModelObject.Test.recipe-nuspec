@@ -6,14 +6,14 @@
     <tags>bootstrap bootstrapper visualstudio vs project csproj codegen model modelobject test</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
-      <dependency id="OBeautifulCode.Assertion.Recipes.Must" version="1.0.24" />
-      <dependency id="OBeautifulCode.AutoFakeItEasy" version="1.0.130" />
-      <dependency id="OBeautifulCode.CodeGen.ModelObject.Recipes.TestScenarios" version="1.0.139" />
+      <dependency id="OBeautifulCode.Assertion.Recipes.Must" version="1.0.25" />
+      <dependency id="OBeautifulCode.AutoFakeItEasy" version="1.0.131" />
+      <dependency id="OBeautifulCode.CodeGen.ModelObject.Recipes.TestScenarios" version="1.0.140" />
       <dependency id="OBeautifulCode.Equality.Recipes.EqualityHelpers" version="1.0.22" />
       <dependency id="OBeautifulCode.Math.Recipes.ThreadSafeRandom" version="1.0.76" />
-      <dependency id="OBeautifulCode.Reflection.Recipes.ReflectionHelper" version="1.0.107" />
+      <dependency id="OBeautifulCode.Reflection.Recipes.ReflectionHelper" version="1.0.108" />
       <dependency id="OBeautifulCode.Representation.System" version="1.0.55" />
-      <dependency id="OBeautifulCode.Serialization.Recipes.RoundtripSerializationExtensions" version="1.0.92" />
+      <dependency id="OBeautifulCode.Serialization.Recipes.RoundtripSerializationExtensions" version="1.0.94" />
       <dependency id="OBeautifulCode.Type" version="1.0.76" />
     </dependencies>
   </metadata>

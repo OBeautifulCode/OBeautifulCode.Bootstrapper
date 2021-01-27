@@ -6,9 +6,9 @@
     <tags>bootstrap bootstrapper visualstudio vs project csproj</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
-      <dependency id="OBeautifulCode.Build.Analyzers" version="1.1.135" />
-      <dependency id="OBeautifulCode.Build.Conventions.ReSharper" version="1.1.135" />
-      <dependency id="OBeautifulCode.Build.Properties.ProjectInfo" version="1.1.135" />
+      <dependency id="OBeautifulCode.Build.Analyzers" version="1.1.136" />
+      <dependency id="OBeautifulCode.Build.Conventions.ReSharper" version="1.1.136" />
+      <dependency id="OBeautifulCode.Build.Properties.ProjectInfo" version="1.1.136" />
       <dependency id="OBeautifulCode.CodeAnalysis.Recipes.SuppressBecause" version="1.0.14" />
     </dependencies>
   </metadata>
