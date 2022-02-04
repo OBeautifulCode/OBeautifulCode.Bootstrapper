@@ -6,8 +6,8 @@
     <tags>bootstrap bootstrapper visualstudio vs project csproj test</tags>
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
-      <dependency id="OBeautifulCode.AutoFakeItEasy" version="1.0.134" />
-      <dependency id="OBeautifulCode.Assertion.Recipes.Must" version="1.0.28" />
+      <dependency id="OBeautifulCode.AutoFakeItEasy" version="1.0.138" />
+      <dependency id="OBeautifulCode.Assertion.Recipes.Must" version="1.0.33" />
       <dependency id="xunit" version="[2.4.1]" />
     </dependencies>
   </metadata>
