@@ -79,8 +79,8 @@
     <Reference Include="OBeautifulCode.Serialization.PropertyBag, Version=1.0.145.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\OBeautifulCode.Serialization.PropertyBag.1.0.145\lib\net462\OBeautifulCode.Serialization.PropertyBag.dll</HintPath>
     </Reference>
-    <Reference Include="OBeautifulCode.Type, Version=1.0.139.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\OBeautifulCode.Type.1.0.139\lib\net462\OBeautifulCode.Type.dll</HintPath>
+    <Reference Include="OBeautifulCode.Type, Version=1.0.151.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OBeautifulCode.Type.1.0.151\lib\net462\OBeautifulCode.Type.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
@@ -105,6 +105,7 @@
     <Compile Include=".recipes\OBeautifulCode.Assertion\ApplyBecause.cs" />
     <Compile Include=".recipes\OBeautifulCode.Assertion\AssertionKind.cs" />
     <Compile Include=".recipes\OBeautifulCode.Assertion\AssertionTracker.cs" />
+    <Compile Include=".recipes\OBeautifulCode.Assertion\AssertionTrackerExtensions.cs" />
     <Compile Include=".recipes\OBeautifulCode.Assertion\AssertionTrackerShould.cs" />
     <Compile Include=".recipes\OBeautifulCode.Assertion\AssertionVerificationFailedException.cs" />
     <Compile Include=".recipes\OBeautifulCode.Assertion\Delegates.cs" />
