@@ -38,7 +38,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -49,23 +49,15 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             if (ReferenceEquals(verifiableItem.ItemValue, null))
             {
-                var exceptionMessage = BuildVerificationFailedExceptionMessage(
-                    assertionTracker,
-                    verification, 
-                    verifiableItem,
-                    NotBeNullExceptionMessageSuffix);
+                var exceptionMessage = BuildVerificationFailedExceptionMessage(assertionTracker, verification, verifiableItem, NotBeNullExceptionMessageSuffix);
 
                 var argumentExceptionKind = verifiableItem.ItemIsElementInEnumerable
                     ? ArgumentExceptionKind.ArgumentException
                     : ArgumentExceptionKind.ArgumentNullException;
 
-                var exception = BuildException(
-                    assertionTracker, 
-                    verification, 
-                    exceptionMessage, 
-                    argumentExceptionKind);
+                var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -82,7 +74,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -99,7 +91,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -116,7 +108,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -133,7 +125,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -155,7 +147,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -177,7 +169,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -199,7 +191,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -221,7 +213,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -232,11 +224,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             var shouldThrow = string.IsNullOrWhiteSpace((string)verifiableItem.ItemValue);
 
             if (shouldThrow)
@@ -245,7 +232,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -262,7 +249,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -279,7 +266,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -296,7 +283,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -314,7 +301,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -332,7 +319,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -343,11 +330,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var valueAsEnumerable = verifiableItem.ItemValue as IEnumerable;
 
@@ -363,7 +345,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -374,11 +356,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             NotBeEmptyEnumerableInternalInternal(assertionTracker, verification, verifiableItem, NotBeEmptyEnumerableExceptionMessageSuffix);
         }
@@ -405,11 +382,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             var valueAsDictionary = verifiableItem.ItemValue as IDictionary;
 
             // ReSharper disable once PossibleNullReferenceException
@@ -423,7 +395,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -434,11 +406,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             NotBeEmptyDictionaryInternalInternal(assertionTracker, verification, verifiableItem, NotBeEmptyDictionaryExceptionMessageSuffix);
         }
@@ -464,11 +431,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             var valueAsEnumerable = verifiableItem.ItemValue as IEnumerable;
 
             var shouldThrow = true;
@@ -489,7 +451,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -499,11 +461,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             NotContainAnyNullElementsInternalInternal(assertionTracker, verification, verifiableItem, NotContainAnyNullElementsExceptionMessageSuffix);
         }
@@ -528,11 +485,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             var valueAsEnumerable = verifiableItem.ItemValue as IEnumerable;
 
             var shouldThrow = true;
@@ -553,7 +505,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -563,11 +515,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             NotContainAnyKeyValuePairsWithNullValueInternalInternal(assertionTracker, verification, verifiableItem, NotContainAnyKeyValuePairsWithNullValueExceptionMessageSuffix);
         }
@@ -592,11 +539,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             ContainKeyInternalInternal(assertionTracker, verification, verifiableItem, ContainKeyExceptionMessageSuffix);
         }
 
@@ -606,11 +548,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             NotContainKeyInternalInternal(assertionTracker, verification, verifiableItem, NotContainKeyExceptionMessageSuffix);
         }
@@ -660,7 +597,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -683,7 +620,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1045,7 +982,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1071,7 +1008,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1082,11 +1019,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             ContainElementInternalInternal(assertionTracker, verification, verifiableItem, ContainElementExceptionMessageSuffix);
         }
 
@@ -1096,11 +1028,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             NotContainElementInternalInternal(assertionTracker, verification, verifiableItem, NotContainElementExceptionMessageSuffix);
         }
@@ -1138,11 +1065,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             ContainOnlyDistinctElementsInternalInternal(assertionTracker, verification, verifiableItem, ContainOnlyDistinctElementsExceptionMessageSuffix);
         }
 
@@ -1166,11 +1088,6 @@ namespace OBeautifulCode.Assertion.Recipes
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
 
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
-
             var otherAllowedCharacters = (IReadOnlyCollection<char>)verification.VerificationParameters[0].Value;
 
             var stringValue = (string)verifiableItem.ItemValue;
@@ -1183,7 +1100,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1193,11 +1110,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var otherAllowedCharacters = (IReadOnlyCollection<char>)verification.VerificationParameters[0].Value;
 
@@ -1211,7 +1123,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1221,11 +1133,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var treatNewLineAsPrintable = (bool)verification.VerificationParameters[0].Value;
 
@@ -1244,7 +1151,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1254,11 +1161,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var regex = (Regex)verification.VerificationParameters[0].Value;
 
@@ -1272,7 +1174,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1282,11 +1184,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var regex = (Regex)verification.VerificationParameters[0].Value;
 
@@ -1300,7 +1197,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1311,11 +1208,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
             var comparisonValue = (string)verification.VerificationParameters[0].Value;
@@ -1331,7 +1223,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1342,11 +1234,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
             var comparisonValue = (string)verification.VerificationParameters[0].Value;
@@ -1362,7 +1249,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1373,11 +1260,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
             var comparisonValue = (string)verification.VerificationParameters[0].Value;
@@ -1393,7 +1275,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1404,11 +1286,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
             var comparisonValue = (string)verification.VerificationParameters[0].Value;
@@ -1424,7 +1301,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1441,7 +1318,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1458,7 +1335,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1468,11 +1345,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
             var comparisonValue = (string)verification.VerificationParameters[0].Value;
@@ -1485,7 +1357,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1495,11 +1367,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
             var comparisonValue = (string)verification.VerificationParameters[0].Value;
@@ -1512,7 +1379,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1522,11 +1389,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var valueAsEnumerable = verifiableItem.ItemValue as IEnumerable;
 
@@ -1548,7 +1410,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1558,11 +1420,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var valueAsEnumerable = verifiableItem.ItemValue as IEnumerable;
 
@@ -1582,7 +1439,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1592,11 +1449,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var expectedType = (Type)verification.VerificationParameters[0].Value;
 
@@ -1614,7 +1466,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1624,11 +1476,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var unexpectedType = (Type)verification.VerificationParameters[0].Value;
 
@@ -1644,7 +1491,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1654,11 +1501,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var assignableType = (Type)verification.VerificationParameters[0].Value;
 
@@ -1678,7 +1520,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1688,11 +1530,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var unassignableType = (Type)verification.VerificationParameters[0].Value;
 
@@ -1712,7 +1549,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1722,11 +1559,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
 
@@ -1738,7 +1570,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1748,11 +1580,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             var subjectValue = (string)verifiableItem.ItemValue;
 
@@ -1764,7 +1591,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1774,11 +1601,6 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem)
         {
             NotBeNullInternal(assertionTracker, verification, verifiableItem);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                return;
-            }
 
             BeUtcDateTimeInternalInternal(assertionTracker, verification, verifiableItem, BeUtcDateTimeExceptionMessageSuffix);
         }
@@ -1816,7 +1638,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1840,7 +1662,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1864,7 +1686,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1888,7 +1710,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1912,7 +1734,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1936,7 +1758,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1960,7 +1782,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -1984,7 +1806,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
         
@@ -2008,7 +1830,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2032,7 +1854,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2056,7 +1878,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2080,7 +1902,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2104,7 +1926,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2128,7 +1950,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2164,7 +1986,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2200,7 +2022,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, argumentExceptionKind);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2228,7 +2050,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
             var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-            RecordOrThrow(assertionTracker, exception);
+            throw exception;
         }
 
         private static void NotContainElementInternalInternal(
@@ -2251,7 +2073,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                     var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                    RecordOrThrow(assertionTracker, exception);
+                    throw exception;
                 }
             }
         }
@@ -2279,7 +2101,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                         var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                        RecordOrThrow(assertionTracker, exception);
+                        throw exception;
                     }
                 }
 
@@ -2305,7 +2127,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
             var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-            RecordOrThrow(assertionTracker, exception);
+            throw exception;
         }
 
         private static void NotContainKeyInternalInternal(
@@ -2323,7 +2145,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2343,7 +2165,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2373,7 +2195,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2410,7 +2232,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2433,7 +2255,7 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
+                throw exception;
             }
         }
 
@@ -2444,6 +2266,8 @@ namespace OBeautifulCode.Assertion.Recipes
             VerifiableItem verifiableItem,
             string exceptionMessageSuffix)
         {
+            NotBeNullInternal(assertionTracker, verification, verifiableItem);
+
             var valueAsDictionary = verifiableItem.ItemValue as IDictionary;
 
             // ReSharper disable once PossibleNullReferenceException
@@ -2455,20 +2279,6 @@ namespace OBeautifulCode.Assertion.Recipes
 
                 var exception = BuildException(assertionTracker, verification, exceptionMessage, ArgumentExceptionKind.ArgumentException);
 
-                RecordOrThrow(assertionTracker, exception);
-            }
-        }
-
-        private static void RecordOrThrow(
-            AssertionTracker assertionTracker,
-            Exception exception)
-        {
-            if (assertionTracker.Actions.HasFlag(Actions.PutIntoRecordingMode))
-            {
-                assertionTracker.VerificationException = exception;
-            }
-            else
-            {
                 throw exception;
             }
         }

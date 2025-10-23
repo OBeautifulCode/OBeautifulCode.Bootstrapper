@@ -8,7 +8,6 @@
     <dependencies>
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="$version$" />
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core.CodeGen.ModelObject" version="$version$" />
-      <dependency id="OBeautifulCode.Assertion.Recipes.AssertionTrackerExtensions" version="1.0.40" />
     </dependencies>
   </metadata>
   <files>

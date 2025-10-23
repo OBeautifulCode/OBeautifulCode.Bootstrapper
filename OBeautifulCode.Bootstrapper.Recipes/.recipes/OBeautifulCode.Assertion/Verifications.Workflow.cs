@@ -30,27 +30,15 @@ namespace OBeautifulCode.Assertion.Recipes
             this AssertionTracker assertionTracker,
             Verification verification)
         {
-            assertionTracker.ThrowImproperUseOfFrameworkIfDetected(
-                AssertionTrackerShould.Exist, 
-                AssertionTrackerShould.BeMusted);
-
-            if (assertionTracker.VerificationException != null)
-            {
-                // Short-circuit if a prior verification has failed and we are recording
-                // instead of throwing exceptions.  Note that if there's an improper use of the
-                // framework with subsequent verifications (e.g. attempting to each() a value that
-                // is not enumerable), those will not surface because of the short-circuit.
-                // They would also have not surfaced if we were throwing instead of recording.
-                return;
-            }
+            assertionTracker.ThrowImproperUseOfFrameworkIfDetected(AssertionTrackerShould.Exist, AssertionTrackerShould.BeMusted);
 
             // ReSharper disable once IdentifierTypo
             var hasBeenEached = assertionTracker.Actions.HasFlag(Actions.Eached);
 
             if (hasBeenEached)
             {
-                // If we haven't checked already, check that the subject is an IEnumerable and not null.
-                if (!assertionTracker.Actions.HasFlag(Actions.EachedValueVerifiedForIteration))
+                // check that the subject is an IEnumerable and not null
+                if (!assertionTracker.Actions.HasFlag(Actions.VerifiedAtLeastOnce))
                 {
                     var eachVerification = new Verification
                     {
@@ -64,21 +52,9 @@ namespace OBeautifulCode.Assertion.Recipes
                         ItemIsElementInEnumerable = false,
                     };
 
-                    ThrowIfVerifiableItemTypeNotAssignableToSpecifiedTypes(
-                        eachVerification, 
-                        eachVerifiableItem, 
-                        VerifiableItemMustBeEnumerableTypeValidations.Single());
+                    ThrowIfVerifiableItemTypeNotAssignableToSpecifiedTypes(eachVerification, eachVerifiableItem, VerifiableItemMustBeEnumerableTypeValidations.Single());
 
-                    // handle here
                     NotBeNullInternal(assertionTracker, eachVerification, eachVerifiableItem);
-
-                    // short-circuit if exception was recorded
-                    if (assertionTracker.VerificationException != null)
-                    {
-                        return;
-                    }
-
-                    assertionTracker.Actions |= Actions.EachedValueVerifiedForIteration;
                 }
 
                 var valueAsEnumerable = (IEnumerable)assertionTracker.SubjectValue;
@@ -101,12 +77,6 @@ namespace OBeautifulCode.Assertion.Recipes
                     verifiableItem.ItemValue = element;
 
                     verification.Handler(assertionTracker, verification, verifiableItem);
-
-                    // short-circuit if exception was recorded
-                    if (assertionTracker.VerificationException != null)
-                    {
-                        return;
-                    }
                 }
             }
             else
