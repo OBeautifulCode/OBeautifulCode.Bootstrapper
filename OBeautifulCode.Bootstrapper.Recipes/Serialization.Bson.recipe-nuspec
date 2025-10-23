@@ -7,8 +7,8 @@
     <iconUrl>https://raw.githubusercontent.com/OBeautifulCode/OBeautifulCode.Bootstrapper/master/OBeautifulCode.Bootstrapper.Recipes/nuget-icon.png</iconUrl>
     <dependencies>
       <dependency id="OBeautifulCode.Bootstrapper.Recipes.Core" version="$version$" />
-      <dependency id="OBeautifulCode.Serialization.Bson" version="1.0.151" />
-      <dependency id="OBeautifulCode.Type.Recipes.AssemblyExtensions" version="1.0.151" />
+      <dependency id="OBeautifulCode.Serialization.Bson" version="1.0.145" />
+      <dependency id="OBeautifulCode.Type.Recipes.AssemblyExtensions" version="1.0.139" />
     </dependencies>
   </metadata>
   <files>

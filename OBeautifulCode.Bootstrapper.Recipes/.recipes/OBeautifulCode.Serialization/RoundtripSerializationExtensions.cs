@@ -257,7 +257,6 @@ namespace OBeautifulCode.Serialization.Recipes
         {
             var result = objectToSerialize.ToDescribedSerializationUsingSpecificFactory(
                 serializerRepresentation,
-                SerializerRepresentationSelectionStrategy.UseSpecifiedRepresentation,
                 SerializerFactories.Standard,
                 serializationFormat);
 
@@ -278,13 +277,11 @@ namespace OBeautifulCode.Serialization.Recipes
             SerializationFormat serializationFormat,
             T objectToSerialize)
         {
-            var describedSerialization = objectToSerialize.ToDescribedSerializationUsingSpecificFactory(
-                serializerRepresentation,
-                SerializerRepresentationSelectionStrategy.UseSpecifiedRepresentation,
-                SerializerFactories.Standard,
-                serializationFormat);
+            var serializer = SerializerFactories.Standard.BuildSerializer(serializerRepresentation);
 
-            var deserializedObject = (T)describedSerialization.DeserializePayloadUsingSpecificFactory(SerializerFactories.Standard);
+            var describedSerialization = objectToSerialize.ToDescribedSerializationUsingSpecificSerializer(serializer, serializationFormat);
+
+            var deserializedObject = (T)describedSerialization.DeserializePayloadUsingSpecificSerializer(serializer);
 
             // note that we cannot return a ValueTuple (DescribedSerializationBase describedSerialization, T actual)
             // here because ValueTuple is not [Serializable]
